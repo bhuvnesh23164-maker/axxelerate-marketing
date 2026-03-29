@@ -420,7 +420,7 @@ export default function LandingPage() {
       )}
 
       {/* 1. TOP NAVIGATION */}
-      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center p-6 px-10">
+      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center p-4 md:p-6 md:px-10">
         <div 
           onClick={() => router.push("/")}
           className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer text-white w-40 h-10"
@@ -435,7 +435,7 @@ export default function LandingPage() {
           <a href="#faq" className="hover:text-white transition-colors">FAQs</a>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3 sm:gap-6">
           <button
             onClick={openModal}
             className="text-xs font-medium text-gray-300 hover:text-white transition-colors hidden sm:block"
@@ -444,7 +444,7 @@ export default function LandingPage() {
           </button>
           <button
             onClick={openModal}
-            className="bg-gradient-to-r from-[#00E5FF] via-[#8B5CF6] to-[#FF0080] text-white px-5 py-2 rounded-full font-bold text-xs shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] transition-all duration-300 hover:scale-[1.02]"
+            className="bg-gradient-to-r from-[#00E5FF] via-[#8B5CF6] to-[#FF0080] text-white px-3.5 py-1.5 text-[11px] sm:px-5 sm:py-2 sm:text-xs rounded-full font-bold shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] transition-all duration-300 hover:scale-[1.02]"
           >
             Request Early Access
           </button>
@@ -953,7 +953,7 @@ export default function LandingPage() {
       
       {/* RIGHT TOP: FLASHCARDS */}
       <div className="flex-1 bg-[#111111] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden flex flex-col group hover:border-white/20 transition-all duration-300 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-        <div className="flex-1 relative bg-[#050505] overflow-hidden">
+        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[250px] md:min-h-0">
           <video 
             src="https://res.cloudinary.com/dsgnnujgx/video/upload/v1774717071/flashcards_sasvpv.mp4" 
             autoPlay 
@@ -973,7 +973,7 @@ export default function LandingPage() {
 
       {/* RIGHT BOTTOM: POMODORO */}
       <div className="flex-1 bg-[#111111] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden flex flex-col group hover:border-white/20 transition-all duration-300 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-        <div className="flex-1 relative bg-[#050505] overflow-hidden">
+        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[250px] md:min-h-0">
           <video 
             src="https://res.cloudinary.com/dsgnnujgx/video/upload/v1774726491/pomodoroo_pcr7dz.mp4" 
             autoPlay 

@@ -854,7 +854,7 @@ export default function LandingPage() {
                 });
               }}
 
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain md:object-cover object-center bg-black md:bg-transparent"
             />
           </div>
         );
@@ -953,7 +953,7 @@ export default function LandingPage() {
       
       {/* RIGHT TOP: FLASHCARDS */}
       <div className="flex-1 bg-[#111111] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden flex flex-col group hover:border-white/20 transition-all duration-300 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[250px] md:min-h-0">
+        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[565px] md:min-h-0">
           <video 
             src="https://res.cloudinary.com/dsgnnujgx/video/upload/v1774717071/flashcards_sasvpv.mp4" 
             autoPlay 
@@ -973,7 +973,7 @@ export default function LandingPage() {
 
       {/* RIGHT BOTTOM: POMODORO */}
       <div className="flex-1 bg-[#111111] backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden flex flex-col group hover:border-white/20 transition-all duration-300 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[250px] md:min-h-0">
+        <div className="flex-1 relative bg-[#050505] overflow-hidden min-h-[565px] md:min-h-0">
           <video 
             src="https://res.cloudinary.com/dsgnnujgx/video/upload/v1774726491/pomodoroo_pcr7dz.mp4" 
             autoPlay 
